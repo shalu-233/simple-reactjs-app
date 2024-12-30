@@ -15,8 +15,8 @@ pipeline {
         }
         stage('BUILD') {
             steps {
-                sh 'npm install'
-                sh 'npm start'
+                    npm 'init -y'
+                    npm command: 'publish'
             }
         }
     

@@ -24,4 +24,9 @@ pipeline {
         }
     
    }
+    post {
+        success {
+            mail subject: 'Build run Update' to: 'admin@gmail.com' body: 'build successfully completed'
+    }
+   }
 }

@@ -12,11 +12,14 @@ pipeline {
                 git url: 'https://github.com/aditya-sridhar/simple-reactjs-app.git',
                     branch: 'master'
             }
+            
         }
         stage('BUILD') {
             steps {
-                    npm 'init -y'
-                    npm command: 'publish'
+                    dir('simple-reactjs-app') { 
+                    sh 'npm install'
+                    sh 'npm start'
+                    }
             }
         }
     

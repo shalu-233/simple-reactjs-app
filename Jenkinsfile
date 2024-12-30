@@ -9,7 +9,7 @@ pipeline {
    stages {
         stage('SCM') {
             steps {
-                git url: 'https://github.com/aditya-sridhar/simple-reactjs-app.git'
+                git url: 'https://github.com/aditya-sridhar/simple-reactjs-app.git',
                     branch: 'master'
             }
         }

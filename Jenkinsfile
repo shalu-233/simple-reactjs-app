@@ -18,7 +18,7 @@ pipeline {
             steps {
                     dir('simple-reactjs-app') { 
                     sh 'npm install'
-                    sh 'npm start'
+                    sh 'npm run build'
                     }
             }
         }
